@@ -1,0 +1,14 @@
+{
+  "name": "dll_plugin_webpack_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:vendor": "webpack --config vendor.webpack.config.js",
+    "build:app": "webpack --config app.webpack.config.js"
+  },
+  "devDependencies": {
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
