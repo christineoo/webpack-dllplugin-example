@@ -5,10 +5,12 @@
   "license": "MIT",
   "scripts": {
     "build:vendor": "webpack --config vendor.webpack.config.js",
-    "build:app": "webpack --config app.webpack.config.js"
+    "build:app": "webpack --config app.webpack.config.js",
+    "start:dev": "yarn build:vendor && webpack-dev-server --config app.webpack.config.js"
   },
   "devDependencies": {
     "webpack": "^4.17.1",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
   }
 }

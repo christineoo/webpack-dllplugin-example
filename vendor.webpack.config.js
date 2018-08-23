@@ -5,7 +5,7 @@ module.exports = {
   },
   output: {
     filename: 'vendor.bundle.js',
-    path: process.cwd(),
+    path: process.cwd().concat('/build'),
     library: 'vendor_lib',
   },
   plugins: [new webpack.DllPlugin({
